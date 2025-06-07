@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../components/SideBar';
+import SideBar from '../components/SideBar';
 import Searchbar from '../components/Searchbar';
 import TopPlay from '../components/TopPlay';
 import MusicPlayer from '../components/MusicPlayer/index.jsx';
@@ -9,7 +9,7 @@ const Layout = () => {
   const { activeSong } = useSelector((state) => state.player);
   return (
     <div className="relative flex">
-      <Sidebar />
+      <SideBar />
       <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#121286]">
         <Searchbar />
 
